@@ -1,5 +1,5 @@
 {
-  "name": "@snyder-tech/bdx-analog-panda-provider",
+  "name": "@snyder-tech/bdx-analog-style-pipeline-panda-provider",
   "version": "0.0.0",
   "type": "module",
   "main": "./src/index.ts",

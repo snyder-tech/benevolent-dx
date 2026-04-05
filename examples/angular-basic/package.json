@@ -8,10 +8,10 @@
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@snyder-tech/bdx-analog-panda-provider": "workspace:*",
-    "@snyder-tech/bdx-analog-style-dictionary-provider": "workspace:*",
+    "@snyder-tech/bdx-analog-style-pipeline-panda-provider": "workspace:*",
+    "@snyder-tech/bdx-analog-style-pipeline-style-dictionary-provider": "workspace:*",
     "@snyder-tech/bdx-analog-style-pipeline-core": "workspace:*",
     "@snyder-tech/bdx-analog-style-pipeline-vite": "workspace:*",
-    "@snyder-tech/bdx-analog-tokiforge-provider": "workspace:*"
+    "@snyder-tech/bdx-analog-style-pipeline-tokiforge-provider": "workspace:*"
   }
 }

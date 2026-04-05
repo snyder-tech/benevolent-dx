@@ -21,13 +21,13 @@
       "@snyder-tech/bdx-analog-style-pipeline-vite": [
         "packages/style-pipeline-vite/src/index.ts"
       ],
-      "@snyder-tech/bdx-analog-style-dictionary-provider": [
+      "@snyder-tech/bdx-analog-style-pipeline-style-dictionary-provider": [
         "packages/style-dictionary-provider/src/index.ts"
       ],
-      "@snyder-tech/bdx-analog-panda-provider": [
+      "@snyder-tech/bdx-analog-style-pipeline-panda-provider": [
         "packages/panda-provider/src/index.ts"
       ],
-      "@snyder-tech/bdx-analog-tokiforge-provider": [
+      "@snyder-tech/bdx-analog-style-pipeline-tokiforge-provider": [
         "packages/tokiforge-provider/src/index.ts"
       ]
     }

@@ -1,7 +1,7 @@
 import { defineStylePipelineConfig } from '@snyder-tech/bdx-analog-style-pipeline-core';
-import { styleDictionaryProvider } from '@snyder-tech/bdx-analog-style-dictionary-provider';
-import { pandaProvider } from '@snyder-tech/bdx-analog-panda-provider';
-import { tokiforgeProvider } from '@snyder-tech/bdx-analog-tokiforge-provider';
+import { styleDictionaryProvider } from '@snyder-tech/bdx-analog-style-pipeline-style-dictionary-provider';
+import { pandaProvider } from '@snyder-tech/bdx-analog-style-pipeline-panda-provider';
+import { tokiforgeProvider } from '@snyder-tech/bdx-analog-style-pipeline-tokiforge-provider';
 
 export default defineStylePipelineConfig({
   providers: [

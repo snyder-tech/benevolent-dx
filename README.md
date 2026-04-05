@@ -34,9 +34,9 @@ packages that make your life better.
 
 - `@snyder-tech/bdx-analog-style-pipeline-core`
 - `@snyder-tech/bdx-analog-style-pipeline-vite`
-- `@snyder-tech/bdx-analog-style-dictionary-provider`
-- `@snyder-tech/bdx-analog-panda-provider`
-- `@snyder-tech/bdx-analog-tokiforge-provider`
+- `@snyder-tech/bdx-analog-style-pipeline-style-dictionary-provider`
+- `@snyder-tech/bdx-analog-style-pipeline-panda-provider`
+- `@snyder-tech/bdx-analog-style-pipeline-tokiforge-provider`
 
 ## Principles
 

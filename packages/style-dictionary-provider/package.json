@@ -1,5 +1,5 @@
 {
-  "name": "@snyder-tech/bdx-analog-style-dictionary-provider",
+  "name": "@snyder-tech/bdx-analog-style-pipeline-style-dictionary-provider",
   "version": "0.0.0",
   "type": "module",
   "main": "./src/index.ts",
