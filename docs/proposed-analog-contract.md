@@ -52,7 +52,7 @@ export interface AnalogStyleProviderResult {
 
 ## Community package responsibility
 
-`analog-packages` should own:
+`benevolent-dx` should own:
 
 - provider-specific configs
 - Vite integration

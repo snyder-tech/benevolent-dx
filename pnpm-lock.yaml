@@ -26,19 +26,19 @@ importers:
 
   examples/angular-basic:
     dependencies:
-      '@snyder-tech/panda-provider':
+      '@snyder-tech/bdx-analog-panda-provider':
         specifier: workspace:*
         version: link:../../packages/panda-provider
-      '@snyder-tech/style-dictionary-provider':
+      '@snyder-tech/bdx-analog-style-dictionary-provider':
         specifier: workspace:*
         version: link:../../packages/style-dictionary-provider
-      '@snyder-tech/style-pipeline-core':
+      '@snyder-tech/bdx-analog-style-pipeline-core':
         specifier: workspace:*
         version: link:../../packages/style-pipeline-core
-      '@snyder-tech/style-pipeline-vite':
+      '@snyder-tech/bdx-analog-style-pipeline-vite':
         specifier: workspace:*
         version: link:../../packages/style-pipeline-vite
-      '@snyder-tech/tokiforge-provider':
+      '@snyder-tech/bdx-analog-tokiforge-provider':
         specifier: workspace:*
         version: link:../../packages/tokiforge-provider
 
@@ -47,13 +47,13 @@ importers:
       '@pandacss/dev':
         specifier: ^0.52.0
         version: 0.52.0(typescript@5.9.3)
-      '@snyder-tech/style-pipeline-core':
+      '@snyder-tech/bdx-analog-style-pipeline-core':
         specifier: workspace:*
         version: link:../style-pipeline-core
 
   packages/style-dictionary-provider:
     dependencies:
-      '@snyder-tech/style-pipeline-core':
+      '@snyder-tech/bdx-analog-style-pipeline-core':
         specifier: workspace:*
         version: link:../style-pipeline-core
       style-dictionary:
@@ -64,7 +64,7 @@ importers:
 
   packages/style-pipeline-vite:
     dependencies:
-      '@snyder-tech/style-pipeline-core':
+      '@snyder-tech/bdx-analog-style-pipeline-core':
         specifier: workspace:*
         version: link:../style-pipeline-core
       vite:
@@ -73,7 +73,7 @@ importers:
 
   packages/tokiforge-provider:
     dependencies:
-      '@snyder-tech/style-pipeline-core':
+      '@snyder-tech/bdx-analog-style-pipeline-core':
         specifier: workspace:*
         version: link:../style-pipeline-core
 

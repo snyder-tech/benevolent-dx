@@ -5,7 +5,7 @@ import {
   type StylePipelineBuildResult,
   type StylePipelineContext,
   type StylePipelineOutput,
-} from '@snyder-tech/style-pipeline-core';
+} from '@snyder-tech/bdx-analog-style-pipeline-core';
 
 export interface StyleDictionaryDeclaredOutput {
   destination: string;

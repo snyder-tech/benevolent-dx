@@ -1,5 +1,5 @@
 {
-  "name": "@snyder-tech/tokiforge-provider",
+  "name": "@snyder-tech/bdx-analog-tokiforge-provider",
   "version": "0.0.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -8,7 +8,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@snyder-tech/style-pipeline-core": "workspace:*"
+    "@snyder-tech/bdx-analog-style-pipeline-core": "workspace:*"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json --noEmit",

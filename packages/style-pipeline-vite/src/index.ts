@@ -8,7 +8,7 @@ import {
   type StylePipelineConfig,
   type StylePipelineContext,
   type StylePipelineOutput,
-} from '@snyder-tech/style-pipeline-core';
+} from '@snyder-tech/bdx-analog-style-pipeline-core';
 
 const DEFAULT_MANIFEST_MODULE_ID = 'virtual:style-pipeline';
 const DEFAULT_CSS_MODULE_ID = 'virtual:style-pipeline.css';

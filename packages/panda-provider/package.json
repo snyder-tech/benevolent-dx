@@ -1,5 +1,5 @@
 {
-  "name": "@snyder-tech/panda-provider",
+  "name": "@snyder-tech/bdx-analog-panda-provider",
   "version": "0.0.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -8,7 +8,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@snyder-tech/style-pipeline-core": "workspace:*"
+    "@snyder-tech/bdx-analog-style-pipeline-core": "workspace:*"
   },
   "peerDependencies": {
     "@pandacss/dev": "^0.52.0"

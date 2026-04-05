@@ -4,7 +4,7 @@ import {
   toStyleImportId,
   type StylePipelineBuildResult,
   type StylePipelineOutput,
-} from '@snyder-tech/style-pipeline-core';
+} from '@snyder-tech/bdx-analog-style-pipeline-core';
 
 export interface PandaProviderOptions {
   configFile: string;

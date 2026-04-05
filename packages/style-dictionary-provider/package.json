@@ -1,5 +1,5 @@
 {
-  "name": "@snyder-tech/style-dictionary-provider",
+  "name": "@snyder-tech/bdx-analog-style-dictionary-provider",
   "version": "0.0.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -8,7 +8,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@snyder-tech/style-pipeline-core": "workspace:*"
+    "@snyder-tech/bdx-analog-style-pipeline-core": "workspace:*"
   },
   "peerDependencies": {
     "style-dictionary": "^5.0.0"
