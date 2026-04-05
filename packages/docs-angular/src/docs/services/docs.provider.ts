@@ -1,10 +1,12 @@
 import {
   computed,
+  EnvironmentInjector,
   inject,
   Injectable,
   InjectionToken,
   Provider,
   ResourceRef,
+  runInInjectionContext,
   Signal,
 } from '@angular/core';
 import { NavItem, Doc, DocsTreeRoot } from '../models';
@@ -63,6 +65,7 @@ export type TocItem = { id: string; level: number; text: string };
   providedIn: 'root',
 })
 export class DocsProvider implements DocsApi {
+  private readonly environmentInjector = inject(EnvironmentInjector);
   private readonly docsOptions = inject(DOCUMENTATION_SOURCE_TOKEN, {
     optional: true,
   });
@@ -81,7 +84,9 @@ export class DocsProvider implements DocsApi {
       customFilename: this.resolveContentLookupFromSlug(slug()),
       skipRender: true,
     }));
-    return contentFileResource(filePath);
+    return runInInjectionContext(this.environmentInjector, () =>
+      contentFileResource(filePath),
+    );
   }
 
   /** Exposes the computed docs navigation tree for rendering. */
@@ -97,7 +102,9 @@ export class DocsProvider implements DocsApi {
     }
 
     try {
-      const files = injectContentFiles((f) => f.filename.includes(dir));
+      const files = runInInjectionContext(this.environmentInjector, () =>
+        injectContentFiles((f) => f.filename.includes(dir)),
+      );
       this.pageTreeRoot = this.createRootTree(this.resolveTreeRootName(dir));
       files.forEach((file) => this.registerContentFile(file as any));
     } catch (e) {
