@@ -39,6 +39,12 @@ declare module '@analogjs/router' {
       query: Record<string, string | string[] | undefined>;
       queryOutput: Record<string, string | string[] | undefined>;
     };
+    '/docs/reference/package-index': {
+      params: Record<string, never>;
+      paramsOutput: Record<string, never>;
+      query: Record<string, string | string[] | undefined>;
+      queryOutput: Record<string, string | string[] | undefined>;
+    };
     '/docs/[[...slug]]': {
       params: { slug?: string[] };
       paramsOutput: { slug?: string[] };
@@ -75,11 +81,12 @@ export interface AnalogGeneratedRouteRecord<
 
 export interface AnalogFileRoutesById {
   "/index": AnalogGeneratedRouteRecord<"/index", "/", "/", null, readonly []>;
-  "/docs": AnalogGeneratedRouteRecord<"/docs", "docs", "/docs", null, readonly ["/docs/getting-started", "/docs/guides/publishing", "/docs/packages/docs-angular/index", "/docs/packages/markdown-pipeline/index", "/docs/[[...slug]]"]>;
+  "/docs": AnalogGeneratedRouteRecord<"/docs", "docs", "/docs", null, readonly ["/docs/getting-started", "/docs/guides/publishing", "/docs/packages/docs-angular/index", "/docs/packages/markdown-pipeline/index", "/docs/reference/package-index", "/docs/[[...slug]]"]>;
   "/docs/getting-started": AnalogGeneratedRouteRecord<"/docs/getting-started", "getting-started", "/docs/getting-started", "/docs", readonly []>;
   "/docs/guides/publishing": AnalogGeneratedRouteRecord<"/docs/guides/publishing", "guides/publishing", "/docs/guides/publishing", "/docs", readonly []>;
   "/docs/packages/docs-angular/index": AnalogGeneratedRouteRecord<"/docs/packages/docs-angular/index", "packages/docs-angular", "/docs/packages/docs-angular", "/docs", readonly []>;
   "/docs/packages/markdown-pipeline/index": AnalogGeneratedRouteRecord<"/docs/packages/markdown-pipeline/index", "packages/markdown-pipeline", "/docs/packages/markdown-pipeline", "/docs", readonly []>;
+  "/docs/reference/package-index": AnalogGeneratedRouteRecord<"/docs/reference/package-index", "reference/package-index", "/docs/reference/package-index", "/docs", readonly []>;
   "/docs/[[...slug]]": AnalogGeneratedRouteRecord<"/docs/[[...slug]]", "[[...slug]]", "/docs/[[...slug]]", "/docs", readonly []>;
 }
 
@@ -90,6 +97,7 @@ export interface AnalogFileRoutesByFullPath {
   "/docs/guides/publishing": AnalogFileRoutesById["/docs/guides/publishing"];
   "/docs/packages/docs-angular": AnalogFileRoutesById["/docs/packages/docs-angular/index"];
   "/docs/packages/markdown-pipeline": AnalogFileRoutesById["/docs/packages/markdown-pipeline/index"];
+  "/docs/reference/package-index": AnalogFileRoutesById["/docs/reference/package-index"];
   "/docs/[[...slug]]": AnalogFileRoutesById["/docs/[[...slug]]"];
 }
 
@@ -119,7 +127,7 @@ export const analogRouteTree = {
       path: "docs",
       fullPath: "/docs",
       parentId: null,
-      children: ["/docs/getting-started", "/docs/guides/publishing", "/docs/packages/docs-angular/index", "/docs/packages/markdown-pipeline/index", "/docs/[[...slug]]"] as const,
+      children: ["/docs/getting-started", "/docs/guides/publishing", "/docs/packages/docs-angular/index", "/docs/packages/markdown-pipeline/index", "/docs/reference/package-index", "/docs/[[...slug]]"] as const,
       sourceFile: "/src/app/pages/docs.page.ts",
       kind: "page",
       hasParamsSchema: false,
@@ -194,6 +202,22 @@ export const analogRouteTree = {
       isCatchAll: false,
       isOptionalCatchAll: false,
     } satisfies AnalogFileRoutesById["/docs/packages/markdown-pipeline/index"],
+    "/docs/reference/package-index": {
+      id: "/docs/reference/package-index",
+      path: "reference/package-index",
+      fullPath: "/docs/reference/package-index",
+      parentId: "/docs",
+      children: [] as const,
+      sourceFile: "/src/content/docs/reference/package-index.md",
+      kind: "content",
+      hasParamsSchema: false,
+      hasQuerySchema: false,
+      hasJsonLd: false,
+      isIndex: false,
+      isGroup: false,
+      isCatchAll: false,
+      isOptionalCatchAll: false,
+    } satisfies AnalogFileRoutesById["/docs/reference/package-index"],
     "/docs/[[...slug]]": {
       id: "/docs/[[...slug]]",
       path: "[[...slug]]",
@@ -218,6 +242,7 @@ export const analogRouteTree = {
     "/docs/guides/publishing": "/docs/guides/publishing",
     "/docs/packages/docs-angular": "/docs/packages/docs-angular/index",
     "/docs/packages/markdown-pipeline": "/docs/packages/markdown-pipeline/index",
+    "/docs/reference/package-index": "/docs/reference/package-index",
     "/docs/[[...slug]]": "/docs/[[...slug]]",
   },
 } as const;

@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build:deps": "pnpm --dir ../.. --filter @snyder-tech/bdx-analog-markdown-pipeline run build && pnpm --dir ../.. --filter @snyder-tech/bdx-analog-docs-angular run build",
+    "prebuild": "pnpm run build:deps",
+    "predev": "pnpm run build:deps",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",

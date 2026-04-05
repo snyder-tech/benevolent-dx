@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import analog from '@analogjs/platform';
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
@@ -11,5 +12,25 @@ export default defineConfig(() => ({
     reportCompressedSize: true,
     target: ['es2024'],
   },
-  plugins: [analog(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@snyder-tech/bdx-analog-docs-angular': fileURLToPath(
+        new URL('../../packages/docs-angular/src/index.ts', import.meta.url),
+      ),
+      '@snyder-tech/bdx-analog-markdown-pipeline': fileURLToPath(
+        new URL(
+          '../../packages/markdown-pipeline/src/index.ts',
+          import.meta.url,
+        ),
+      ),
+    },
+  },
+  plugins: [
+    analog({
+      experimental: {
+        useAngularCompilationAPI: true,
+      },
+    }),
+    tailwindcss(),
+  ],
 }));
