@@ -15,6 +15,12 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
+      "@snyder-tech/bdx-analog-docs-angular": [
+        "packages/docs-angular/src/index.ts"
+      ],
+      "@snyder-tech/bdx-analog-markdown-pipeline": [
+        "packages/markdown-pipeline/src/index.ts"
+      ],
       "@snyder-tech/bdx-analog-style-pipeline-core": [
         "packages/style-pipeline-core/src/index.ts"
       ],
