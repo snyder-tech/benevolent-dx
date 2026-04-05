@@ -1,0 +1,17 @@
+{
+  "name": "@snyder-tech/example-angular-basic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo \"Example workspace only\"",
+    "test": "vitest run --passWithNoTests",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@snyder-tech/panda-provider": "workspace:*",
+    "@snyder-tech/style-dictionary-provider": "workspace:*",
+    "@snyder-tech/style-pipeline-core": "workspace:*",
+    "@snyder-tech/style-pipeline-vite": "workspace:*",
+    "@snyder-tech/tokiforge-provider": "workspace:*"
+  }
+}

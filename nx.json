@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nx.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/*.spec.ts",
+      "!{projectRoot}/vitest.config.ts"
+    ],
+    "sharedGlobals": ["{workspaceRoot}/tsconfig.base.json"]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["production", "^production"]
+    },
+    "test": {
+      "inputs": ["default", "^production"]
+    }
+  }
+}

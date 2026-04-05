@@ -1,0 +1,24 @@
+{
+  "name": "analog-packages",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0",
+    "pnpm": "^10.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2"
+  }
+}

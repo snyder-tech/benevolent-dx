@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@snyder-tech/style-pipeline-core": [
+        "packages/style-pipeline-core/src/index.ts"
+      ],
+      "@snyder-tech/style-pipeline-vite": [
+        "packages/style-pipeline-vite/src/index.ts"
+      ],
+      "@snyder-tech/style-dictionary-provider": [
+        "packages/style-dictionary-provider/src/index.ts"
+      ],
+      "@snyder-tech/panda-provider": [
+        "packages/panda-provider/src/index.ts"
+      ],
+      "@snyder-tech/tokiforge-provider": [
+        "packages/tokiforge-provider/src/index.ts"
+      ]
+    }
+  }
+}
